@@ -26,6 +26,7 @@ public class HttpController {
         System.out.println("hot-fix");
         System.out.println("master first");
         System.out.println("hot-fix second");
+        System.out.println("ssh test");
         return "success";
     }
 
