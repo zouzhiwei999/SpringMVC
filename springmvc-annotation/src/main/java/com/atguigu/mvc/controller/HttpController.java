@@ -22,6 +22,7 @@ public class HttpController {
     @RequestMapping("/testException")
     public String test() {
         System.out.println(1/0);
+        System.out.println("test");
         return "success";
     }
 
