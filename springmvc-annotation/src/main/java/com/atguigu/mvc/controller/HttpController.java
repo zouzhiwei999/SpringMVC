@@ -28,6 +28,7 @@ public class HttpController {
         System.out.println("hot-fix second");
         System.out.println("ssh test");
         System.out.println("pull test");
+        System.out.println("gitee pull test");
         return "success";
     }
 
