@@ -25,6 +25,7 @@ public class HttpController {
         System.out.println("test");
         System.out.println("hot-fix");
         System.out.println("master first");
+        System.out.println("hot-fix second");
         return "success";
     }
 
