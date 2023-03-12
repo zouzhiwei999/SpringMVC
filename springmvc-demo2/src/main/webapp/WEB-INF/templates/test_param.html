@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>测试页面</h1>
+
+<form th:action="@{/param}" action="get">
+    用户名: <input type="text" name="user_name"> <br/>
+    密码: <input type="password" name="password"> <br/>
+    兴趣:
+    <input type="checkbox" name="hobby" value="a">a
+    <input type="checkbox" name="hobby" value="b">b
+    <input type="checkbox" name="hobby" value="c">c <br/>
+
+    <input type="submit" value="控制器方法获取参数">
+</form>
+
+<form th:action="@{/testPojo}" method="post">
+    用户名: <input type="text" name="username"> <br/>
+    密码: <input type="password" name="password"> <br/>
+    性别: <input type="radio" name="sex" value="男">男 <input type="radio" name="sex" value="女">女 <br/>
+    email: <input type="email" name="email"> <br/>
+    <input type="submit" 提交>
+</form>
+</body>
+</html>
