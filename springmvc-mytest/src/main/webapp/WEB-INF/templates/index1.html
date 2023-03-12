@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index1</title>
+</head>
+<body>
+<h1>index1</h1>
+
+<a th:href="@{/aaa/success}">?占位符匹配任意一个字符,/aaa/success</a> <br>
+<a th:href="@{/aba/success}">?占位符匹配任意一个字符,/aba/success</a> <br>
+<hr>
+<a th:href="@{/aba/success}">*占位符匹配任意个字符,/aba/success</a> <br>
+<a th:href="@{/aa/success}">*占位符匹配任意个字符,/aa/success</a> <br>
+<a th:href="@{/asdsda/success}">*占位符匹配任意个字符,/asdsda/success</a> <br>
+
+<hr>
+<a th:href="@{/dad/dsd/success}">/**/占位符匹配任意层路径,/dad/dsd/success</a> <br>
+<a th:href="@{/success}">/**/占位符匹配任意层路径,/success</a> <br>
+<a th:href="@{/dad/dfef/efe/success}">/**/占位符匹配任意层路径,/dad/dfef/efe/success</a> <br>
+
+<form method="post" th:action="@{/success}">
+    username:<input type="text" name="username"> <br>
+    password:<input type="password" name="password"> <br>
+    <input type="submit" value="占位符测试">
+</form>
+
+<br>
+
+<a th:href="@{/success/admin/123456}">占位符测试/success/admin/123456</a>
+
+<br>
+<form th:action="@{/test}" method="post">
+    username:<input type="text" name="username"> <br>
+    password:<input type="password" name="password"> <br>
+    <input type="submit" value="提交">
+</form>
+
+<br>
+<form th:action="@{/test1}" method="post">
+    username:<input type="text" name="username"> <br>
+    password:<input type="password" name="password"> <br>
+    <input type="submit" value="提交">
+</form>
+
+<br>
+<form th:action="@{/test2}" method="post">
+    username:<input type="text" name="username"> <br>
+    password:<input type="password" name="password"> <br>
+    <input type="submit" value="提交">
+</form>
+
+
+</body>
+</html>

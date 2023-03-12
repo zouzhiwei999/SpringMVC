@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>success</title>
+</head>
+<body>
+<h1>success</h1>
+
+ServletAPI获取域对象数据<p th:text="${testscope}"></p> <br>
+ModelAndView获取域对象数据 <br>
+username:<p th:text="${username}"></p>
+password:<p th:text="${password}"></p>
+
+Model获取域对象数据 <br>
+username:<p th:text="${username1}"></p>
+password:<p th:text="${password1}"></p>
+
+Map获取域对象数据 <br>
+username: <span th:text="${username2}"></span> <br>
+password: <span th:text="${password2}"></span> <br>
+
+ModelMap获取域对象数据 <br>
+username: <span th:text="${username3}"></span> <br>
+password: <span th:text="${password3}"></span> <br>
+
+Session获取域对象数据 <br>
+username: <span th:text="${session.username4}"></span> <br>
+password: <span th:text="${session.password4}"></span> <br>
+
+Application获取域对象数据 <br>
+username: <span th:text="${application.username5}"></span> <br>
+password: <span th:text="${application.password5}"></span> <br>
+
+</body>
+</html>

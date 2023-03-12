@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>首页</h1>
+    <a th:href="@{/testServletAPI}">ServletAPI保存域对象</a> <br>
+
+<form th:action="@{/testModelAndView}" method="post">
+    username:<input type="text" name="username"> <br>
+    password:<input type="password" name="password"> <br>
+    <input type="submit" value="testModelAndView">
+</form>
+
+    <form th:action="@{/testModel}" method="post">
+        username:<input type="text" name="username"> <br>
+        password:<input type="password" name="password"> <br>
+        <input type="submit" value="testModel">
+    </form>
+
+    <form th:action="@{/testMap}" method="post">
+        username:<input type="text" name="username"> <br>
+        password:<input type="password" name="password"> <br>
+        <input type="submit" value="testMap">
+    </form>
+
+    <form th:action="@{/testModelMap}" method="post">
+        username:<input type="text" name="username"> <br>
+        password:<input type="password" name="password"> <br>
+        <input type="submit" value="testModelMap">
+    </form>
+
+    <form th:action="@{/testSession}" method="post">
+        username:<input type="text" name="username"> <br>
+        password:<input type="password" name="password"> <br>
+        <input type="submit" value="testSession">
+    </form>
+
+    <form th:action="@{/testApplication}" method="post">
+        username:<input type="text" name="username"> <br>
+        password:<input type="password" name="password"> <br>
+        <input type="submit" value="testApplication">
+    </form>
+
+
+</body>
+</html>
